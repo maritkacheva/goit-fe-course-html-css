@@ -13,6 +13,11 @@ html {
     width: 900px;
     margin: 40px auto;
 }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 nav a {
     text-transform: uppercase;
@@ -65,7 +70,7 @@ article {
 .box-5, .box-6 {
     margin-top: 140px;
 }
-img {
+.image {
     margin-bottom: 30px;
     width: 420px;
     height: 280px;
@@ -78,9 +83,11 @@ p {
     line-height: 1.5em;
 }
 
-.image {
+.image-1 {
     width: 420px;
     height: 450px;
+    margin-bottom: 30px;
+    object-fit: cover;
 }
 .button-box {
     margin: 60px 0;
