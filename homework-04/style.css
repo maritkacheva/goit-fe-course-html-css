@@ -84,9 +84,12 @@ h2 {
     padding: 0px;
    
 }
-.product-list:hover .box-1:hover {
-     filter: grayscale(0);
-    color: #7fd9c7;
+ 
+.product-list-item:hover .box-1:first-of-type {
+    background: #1abc9c;
+}
+.product-list-item:hover .box-1:last-of-type {
+    background: #7fd9c7;
 }
 .product-list-item img {
     width: 254px;
@@ -99,7 +102,7 @@ h2 {
     padding: 12px;
     float: left;
     height: 40px;
-    font-size: 14px;
+    font-size: 18px;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
