@@ -209,16 +209,17 @@ h2::after {
     left: 0;
     top: 0;
     margin: 10px;
-    width: 234px;
-    height: 232px;
-    background: #737373;
-    opacity: 0;
+    width: 236px;
+    height: 260px;
+    background: rgba(115, 115, 115, 0.79);
+   visibility: hidden;
     
 }
+
 .card:hover .overlay {
-    opacity: 0.7;
-    color: #7fd9c7;
-}
+    visibility: visible;
+    color: rgba(127, 217, 199, 0.71);
+ }
 .overlay {
     display: inline-block;
 }
@@ -248,9 +249,14 @@ h2::after {
     margin: 10px;
     
 }
-.icon-list:hover .icon-list:nth-of-type(even) {
+.icon-list li:hover,
+.icon-list li:focus  {
     background: #1abc9c;
-    opacity: 1;
+   
+}
+.overlay-button:hover,
+.overlay-button:focus {
+    background: #1abc9c;
 }
 .overlay-button {
     position: absolute;
@@ -266,6 +272,11 @@ h2::after {
     background: #323232;
     cursor: pointer;
 }
+.overlay-button img {
+    left: 4px;
+    position: absolute;
+    top: 9px;
+ }
 .footer {
     padding: 36px 0 36px 0;
     height: 90px;
@@ -282,13 +293,3 @@ h2::after {
 .f-2 {
     color: #46bfa9;
 }
-
-
-
-
-
-    
-  
-   
-
-
