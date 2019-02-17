@@ -1,6 +1,9 @@
 html {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}* {
+    margin: 0;
+    padding: 0;
 }
 *, *::before, 
    *::after {
@@ -8,11 +11,10 @@ html {
 }
 .container {
     margin: 0 auto;
-    padding: 0 245px;
-    width: 1600px;
+    max-width: 1111px;
     font-size: 0;
 }
-main.container {
+.main-store {
     background-color: #e9f0fd;
 }
 .page-header {
@@ -54,23 +56,26 @@ img {
 .site-navigation li:last-child {
     margin-right: 0; 
 }
-.container main {
-    position: relative;
-}
-.slider {
-    position: absolute;
-    left: -245px;
-}
+
 
 .slider {
     position: relative;
-    width: 1600px;
+    width: 100%;
     height: 600px;
     margin: auto;
 }
-.slider-ctrl {
+.slider-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1111px;
+    height: 600px;   
+}
+.slider-ctrl { 
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
     display: inline-block;
     width: 104px;
     height: 104px;
@@ -81,18 +86,16 @@ img {
 }    
 .slider-ctrl-prev {
     left: 0;
-    margin-left: 245px;
-    transform: translateY(-50%);
+    
 }
 .slider-ctrl-next {
     right: 0;
-    margin-right: 245px;
-    transform: translateY(-50%);
+    
 }
 .slides {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 .slides img {
     height: 600px;
@@ -149,12 +152,13 @@ h2::after {
     bottom: -32px;
 }
 .new-collection {
-    margin: 0;
-    padding: 0;
+    list-style-type: none;
     
 }
+
 .new-collection-item {
     width: 254px;
+
 }
 
 .clearfix::after {
@@ -212,7 +216,7 @@ h2::after {
     width: 236px;
     height: 260px;
     background: rgba(115, 115, 115, 0.79);
-   visibility: hidden;
+    visibility: hidden;
     
 }
 
@@ -228,7 +232,7 @@ h2::after {
     position: relative;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style-type: none;
     font-size: 14px;
 
 }
@@ -281,12 +285,13 @@ h2::after {
     padding: 36px 0 36px 0;
     height: 90px;
     background: #323232;
-    font-size: 18px;
+    
 }
 .footer-content {
-    display: inline-block;
-    margin-left: 600px;
+    text-align: center;
+    font-size: 18px;
 }
+
 .f-1 {
     color: #ffffff;
 }
