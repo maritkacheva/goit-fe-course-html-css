@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <nav class="nav-page">
+        <logo><img src="./img/logo.png" alt="#"/></logo>
+
+        <ul class="menu">
+          <li><a href="#" class="head-menu">Home</a></li>
+          <li><a href="#" class="head-menu">Services</a></li>
+          <li><a href="#" class="head-menu">Portfolio</a></li>
+          <li><a href="#" class="head-menu">About</a></li>
+          <li><a href="#" class="head-menu">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="services container">
+        <h1 class="h-1">Services</h1>
+        <div class="h-descr">Lorem ipsum dolor sit amet consectetur.</div>
+        <ul class="service-list">
+          <li class="service-list-item">
+            <span class="icon-wrapper">
+              <img src="./img/e-commerce-icon.png" alt="#" class="service-icon"
+            /></span>
+            <h3 class="h-3">E-Commerce</h3>
+            <p class="service-descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur nostrum perspiciatis quia eaque tenetur eos, sint
+            </p>
+          </li>
+          <li class="service-list-item">
+            <span class="icon-wrapper">
+              <img
+                src="./img/laptop-icon.png"
+                alt="#"
+                class="service-icon"
+                width="35px"
+                height="31px"
+            /></span>
+            <h3 class="h-3">Responsive Web</h3>
+            <p class="service-descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur nostrum perspiciatis quia eaque tenetur eos, sint
+            </p>
+          </li>
+          <li class="service-list-item">
+            <span class="icon-wrapper">
+              <img src="./img/security-icon.png" alt="#" class="service-icon"
+            /></span>
+            <h3 class="h-3">Web Security</h3>
+            <p class="service-descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Consectetur nostrum perspiciatis quia eaque tenetur eos, sint
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <div class="bg-img">
+          <img src="./img/map-img.png" alt="#" />
+        </div>
+        <div class="container">
+          <h2 class="h-2">contact us</h2>
+          <div class="h-descr">Lorem ipsum dolor sit amet consectetur.</div>
+
+          <form action="#" method="POST">
+            <div class="form">
+              <div class="label">
+                <label>
+                  <input
+                    required type="name"
+                    name="full name"
+                    value=""
+                    class="form-input"
+                    placeholder="your name *"
+                  />
+                </label>
+                <label>
+                  <input
+                    required type="email"
+                    name="email"
+                    value=""
+                    class="form-input"
+                    placeholder="your e-mail *"
+                /></label>
+                <label
+                  ><input
+                    type="text"
+                    name="text"
+                    value=""
+                    class="form-subject"
+                    placeholder="subject"
+                /></label>
+              </div>
+              <div class="textarea">
+                <textarea
+                  name="message" required
+                  class="form-textarea"
+                  id
+                  placeholder="your message *"
+                >
+                </textarea>
+              </div>
+            </div>
+
+            <button class="button">send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
