@@ -22,9 +22,11 @@ img {
     background-image: url(./img/banner-mob.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
+    background-position: center;
+    min-height: 540px;
 
-    
+}
+  
 .menu {
     margin-top: 20px;
     color: #ffffff;   
@@ -182,6 +184,10 @@ img {
     }
     .header {
         background-image: url(./img/banner-tab.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 700px;
         
     }
     .nav {
@@ -234,6 +240,9 @@ img {
     }
     .header {
         background-image: url(./img/banner-desk.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         
     }
     .h-1 {
