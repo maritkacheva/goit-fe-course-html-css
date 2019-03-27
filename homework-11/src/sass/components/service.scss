@@ -1,0 +1,51 @@
+.service__descr {
+  margin-bottom: 20px;
+  margin-top: 54px;
+}
+
+.service__h2 {
+  margin-bottom: 106px;
+}
+
+.service__list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.service__list--item {
+  position: relative;
+  width: 384px;
+  height: auto;
+  padding: 0 34px 0 84px;
+  margin-bottom: 100px;  
+}
+
+.service__list--icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  fill: #95e1d3;  
+}
+
+.service__list--title {
+  font-size: 14px;
+  color: $secondary-title-color;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-family: $paragraph-font-stack; 
+  line-height: 1.6;
+  color: $primary-dark-color;
+
+}  
+
+.service__list--paragraph {
+  text-align: left;
+}

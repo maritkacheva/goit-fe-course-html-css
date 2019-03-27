@@ -1,0 +1,71 @@
+.header {
+  background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  min-height: 1000px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header {
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(../images/img/banner@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    min-height: 1000px;   
+  }
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 50px;
+  z-index: 1;
+}
+
+.header__nav--logo {
+  @extend %link;
+  cursor: pointer;
+}
+
+.header__nav--menu {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 610px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.header-descr {
+  padding: 0;
+  font-size: 72px;
+  margin-top: 190px;
+  margin-bottom: 50px;
+}
+
+.header-titles {
+  color: $primary-white-color;
+  margin-bottom: 124px;
+}
+
+.header-titles__title {
+  padding: 0 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150px;
+  line-height: 140px;
+}
+
+.header__button {
+  @extend %button;
+  border: 3px solid #ffffff;
+  margin: 0 auto;
+  padding: 15px 32px;
+  font-size: 16px;
+  transition: all 0.2s linear;
+}

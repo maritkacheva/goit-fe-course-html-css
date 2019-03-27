@@ -1,0 +1,19 @@
+html {
+  box-sizing: border-box;
+  font-family: $main-font-stack;
+  font-size: 16px;
+  line-height: 1.2;
+  
+  
+}
+
+*, *::before, 
+ *::after {
+  box-sizing: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
